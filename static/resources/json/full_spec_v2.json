@@ -35,6 +35,16 @@
           "type": "string"
         }
       },
+      "IncidentServiceSearchQueryParameter": {
+        "description": "A search query that filters services by name.",
+        "in": "query",
+        "name": "filter",
+        "required": false,
+        "schema": {
+          "example": "ExampleServiceName",
+          "type": "string"
+        }
+      },
       "IncidentTeamIDPathParameter": {
         "description": "The ID of the incident team.",
         "in": "path",
@@ -53,6 +63,16 @@
           "enum": [
             "users"
           ],
+          "type": "string"
+        }
+      },
+      "IncidentTeamSearchQueryParameter": {
+        "description": "A search query that filters teams by name.",
+        "in": "query",
+        "name": "filter",
+        "required": false,
+        "schema": {
+          "example": "ExampleTeamName",
           "type": "string"
         }
       },
@@ -27173,6 +27193,16 @@
               "format": "int64",
               "type": "integer"
             }
+          },
+          {
+            "description": "A search query that filters services by name.",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "example": "ExampleServiceName",
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -29638,6 +29668,16 @@
               "default": 0,
               "format": "int64",
               "type": "integer"
+            }
+          },
+          {
+            "description": "A search query that filters teams by name.",
+            "in": "query",
+            "name": "filter",
+            "required": false,
+            "schema": {
+              "example": "ExampleTeamName",
+              "type": "string"
             }
           }
         ],
